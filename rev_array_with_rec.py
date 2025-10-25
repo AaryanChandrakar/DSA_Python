@@ -24,4 +24,4 @@ print("Revesred array for 'nums2' with l=2 amd r=5 is:",nums2)
 
 
 #  Time complexity : 0(n/2) ~= 0(n)
-# Space Complexity : 0(n)
+# Space Complexity : 0(n/2) ~= 0(n)   It is Stack Space
