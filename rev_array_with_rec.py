@@ -21,3 +21,7 @@ print("Reversed Array is for 'nums' is :",nums)
 nums2 = [5,7,3,2,6,1,5,9]
 reverse_an_array_using_recursion(nums2,2,5)
 print("Revesred array for 'nums2' with l=2 amd r=5 is:",nums2)
+
+
+#  Time complexity : 0(n/2) ~= 0(n)
+# Space Complexity : 0(n)
