@@ -38,3 +38,5 @@ print("Sorted Array: ",nums)
 
 #  Time Complexity = 0(n^2)
 # Space Complexity = 0(1)
+
+#we also need to solve it for descending order
