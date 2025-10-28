@@ -61,7 +61,55 @@ Again we will start : Second outer loop stats here
     ^  ^               5 is smaller than 6, no change requires
 [1, 5, 6, 8, 2, 4, 9]
        ^  ^            6 is smaller than 8, no change requires
-               
+[1, 5, 6, 8, 2, 4, 9]
+          ^  ^         8 is bigger than 2, swap these numbers
+[1, 5, 6, 2, 8, 4, 9]    
+             ^  ^      8 is bigger than 4, swap thse numbers
+[1, 5, 6, 2, 4, 8, 9]
+                ^  ^   8 is smaller than 9, no change requires
+
+Again we will start : Third outer loop stats here
+[1, 5, 6, 2, 4, 8, 9]
+ ^  ^                  1 is smaller than 5, no change requires
+[1, 5, 6, 2, 4, 8, 9]
+    ^  ^               5 is smaller than 6, no changes equires
+[1, 5, 6, 2, 4, 8, 9]
+       ^  ^            6 is bigger than 2, no changes required
+[1, 5, 6, 2, 4, 8, 9]
+          ^  ^         2 is smaller than 4, no chages required
+[1, 5, 6, 2, 4, 8, 9]
+             ^  ^      4 is smaller than 8, no changes required
+[1, 5, 6, 2, 4, 8, 9]            
+                ^  ^   8 is smaller than 9, no changes required
+
+Again we will start : Fourth outer loop stats here
+[1, 5, 6, 2, 4, 8, 9]
+ ^  ^                  1 is smaller than 5, no changes required
+[1, 5, 6, 2, 4, 8, 9]
+    ^  ^               5 is smaller than 6, no change required
+[1, 5, 6, 2, 4, 8, 9]
+       ^  ^            6 is bigger than 2, swap these numbers
+[1, 5, 2, 6, 4, 8, 9]
+          ^  ^         6 is bigger than 4, swap these numbers
+[1, 5, 2, 4, 6, 8, 9]
+             ^  ^      6 is smaller than 8, no changes required
+[1, 5, 2, 4, 6, 8, 9] 
+                ^  ^   8 is smaller than 9, no changes required
+
+Again we will start : Fifth outer loop stats here
+[1, 5, 2, 4, 6, 8, 9]
+ ^  ^                  1 is smaller than 5, no changes required 
+[1, 5, 2, 4, 6, 8, 9]
+    ^  ^               5 is bigger than 2, swap these numbers 
+[1, 2, 5, 4, 6, 8, 9]
+       ^  ^            5 is bigger than 4, swap these numbers
+[1, 2, 4, 5, 6, 8, 9]
+          ^  ^         5 is smaller than 6, no change required 
+[1, 2, 4, 5, 6, 8, 9]
+             ^  ^      6 is smaller than 8, no change required
+[1, 2, 4, 5, 6, 8, 9]
+                ^  ^   8 is smaller than 9, no changes required   
+
 """
 
 
