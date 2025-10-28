@@ -35,7 +35,7 @@ Above statement is performed into parts, means it works in iteration
 --> then second largest value will take place at one index before the last index
 and so on, here you can see
 
-At Starting : 
+At Starting : Here First Outer Loop Starts
 [5, 8, 1, 6, 9, 2, 4]
  ^  ^                   5 is smaller than 8, no change required
 [5, 8, 1, 6, 9, 2, 4]
@@ -51,8 +51,17 @@ At Starting :
 [5, 1, 6, 8, 2, 4, 9]
                         Here we can see the bigger value in array 
                         have been sorted, and placed at right index (last index)
-                        
+
 Similarly this process will be repeated in iteration untill we get sorted array.
+
+Again we will start : Second outer loop stats here
+[5, 1, 6, 8, 2, 4, 9]
+ ^  ^                  5 is bigger than 1, swap these numbers
+[1, 5, 6, 8, 2, 4, 9]
+    ^  ^               5 is smaller than 6, no change requires
+[1, 5, 6, 8, 2, 4, 9]
+       ^  ^            6 is smaller than 8, no change requires
+               
 """
 
 
