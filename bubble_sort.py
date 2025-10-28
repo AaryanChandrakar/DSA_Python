@@ -28,8 +28,31 @@ print("Sorted array:", numbers)
 
 #Note: Bubble sort works upon adjacent swap
 """
-Capuring the bigger values and sending them at the end side of array, one-by-one
+Capuring the bigger values and sending them at the last/end side of array, one-by-one
 
+Above statement is performed into parts, means it works in iteration
+--> at first the biggest value will move at the last index
+--> then second largest value will take place at one index before the last index
+and so on, here you can see
+
+At Starting : 
+[5, 8, 1, 6, 9, 2, 4]
+ ^  ^                   5 is smaller than 8, no change required
+[5, 8, 1, 6, 9, 2, 4]
+    ^  ^                8 is bigger than 1, swap these values
+[5, 1, 8, 6, 9, 2, 4]  
+       ^  ^             8 is bigger than 6, swap these values
+[5, 1, 6, 8, 9, 2, 4]
+          ^  ^          8 is smaller tha 9, no change required
+[5, 1, 6, 8, 9, 2, 4] 
+             ^  ^       9 is bigger than 2, swap these values
+[5, 1, 6, 8, 2, 9, 4]   
+                ^  ^    9 is bigger than 4, swap these values
+[5, 1, 6, 8, 2, 4, 9]
+                        Here we can see the bigger value in array 
+                        have been sorted, and placed at right index (last index)
+                        
+Similarly this process will be repeated in iteration untill we get sorted array.
 """
 
 
