@@ -1,5 +1,5 @@
 # Bubble Sort
-
+"""
 def bubble_sort(nums):
     n = len(nums)
     
@@ -22,3 +22,14 @@ numbers = [5, 8, 1, 6, 9, 2, 4]
 print("Original array:", numbers)
 bubble_sort(numbers)
 print("Sorted array:", numbers)
+"""
+#nums = [5,8,1,6,9,2,4]
+#index   0 1 2 3 4 5 6
+
+#Note: Bubble sort works upon adjacent swap
+"""
+Capuring the bigger values and sending them at the end side of array, one-by-one
+
+"""
+
+
