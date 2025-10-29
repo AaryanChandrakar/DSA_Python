@@ -115,7 +115,22 @@ Again we will start : Fifth outer loop stats here
              ^  ^      6 is smaller than 8, no change required
 [1, 2, 4, 5, 6, 8, 9]
                 ^  ^   8 is smaller than 9, no changes required   
-
 """
+
+def bubble_sort_normal(nums):
+    n = len(nums)
+    
+    for i in range(n-2, -1, -1):
+        
+        for j in range(0, i+1):
+            
+            if nums[j] > nums[j+1]:
+            
+                nums[j], nums[j+1] = nums[j+1], nums[j]
+
+nums_normal = [5, 8, 1, 6, 9, 2, 4]
+print("Unsorted Array: ",nums_normal)
+bubble_sort_normal(nums_normal)
+print("Sorted_Array: ",nums_normal)
 
 
