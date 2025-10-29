@@ -1,5 +1,7 @@
 # Bubble Sort
 """
+# Code that works as Best Case 
+
 def bubble_sort(nums):
     n = len(nums)
     
@@ -22,6 +24,10 @@ numbers = [5, 8, 1, 6, 9, 2, 4]
 print("Original array:", numbers)
 bubble_sort(numbers)
 print("Sorted array:", numbers)
+
+#  Time COmplexity (Avg/Worst): 0(n^2)
+#  Time Complexity(Best Case): 0(n)
+# Space Complexity: 0(1)
 """
 #nums = [5,8,1,6,9,2,4]
 #index   0 1 2 3 4 5 6
