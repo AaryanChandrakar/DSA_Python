@@ -133,4 +133,7 @@ print("Unsorted Array: ",nums_normal)
 bubble_sort_normal(nums_normal)
 print("Sorted_Array: ",nums_normal)
 
+#  Time Complexity: 0(n)
+# Space Complexity: 0(1)
+
 
