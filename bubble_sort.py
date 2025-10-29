@@ -1,8 +1,28 @@
 # Bubble Sort
-"""
-# Code that works as Best Case 
 
-def bubble_sort(nums):
+def bubble_sort_normal(nums):
+    n = len(nums)
+    
+    for i in range(n-2, -1, -1):
+        
+        for j in range(0, i+1):
+            
+            if nums[j] > nums[j+1]:
+            
+                nums[j], nums[j+1] = nums[j+1], nums[j]
+
+nums_normal = [5, 8, 1, 6, 9, 2, 4]
+print("Unsorted Array: ",nums_normal)
+bubble_sort_normal(nums_normal)
+print("Sorted_Array: ",nums_normal)
+
+#  Time Complexity: 0(n)
+# Space Complexity: 0(1)
+
+
+# Optimized Code for Bubble Sort
+
+def bubble_sort_optimized(nums):
     n = len(nums)
     
     for i in range(n-2, -1, -1):
@@ -22,13 +42,14 @@ def bubble_sort(nums):
 
 numbers = [5, 8, 1, 6, 9, 2, 4]
 print("Original array:", numbers)
-bubble_sort(numbers)
+bubble_sort_optimized(numbers)
 print("Sorted array:", numbers)
 
 #  Time COmplexity (Avg/Worst): 0(n^2)
 #  Time Complexity(Best Case): 0(n)
 # Space Complexity: 0(1)
-"""
+
+
 #nums = [5,8,1,6,9,2,4]
 #index   0 1 2 3 4 5 6
 
@@ -116,24 +137,4 @@ Again we will start : Fifth outer loop stats here
 [1, 2, 4, 5, 6, 8, 9]
                 ^  ^   8 is smaller than 9, no changes required   
 """
-
-def bubble_sort_normal(nums):
-    n = len(nums)
-    
-    for i in range(n-2, -1, -1):
-        
-        for j in range(0, i+1):
-            
-            if nums[j] > nums[j+1]:
-            
-                nums[j], nums[j+1] = nums[j+1], nums[j]
-
-nums_normal = [5, 8, 1, 6, 9, 2, 4]
-print("Unsorted Array: ",nums_normal)
-bubble_sort_normal(nums_normal)
-print("Sorted_Array: ",nums_normal)
-
-#  Time Complexity: 0(n)
-# Space Complexity: 0(1)
-
 
