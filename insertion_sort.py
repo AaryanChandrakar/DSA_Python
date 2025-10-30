@@ -27,7 +27,17 @@ for i=7  [3,4,5,6,8,9,10,7,1]
 for i=8  [3,4,5,6,7,8,9,10,1]
                            ^    1 is smaller than 10, start shifting
 for i=9  [1,3,4,5,6,7,8,9,10] 
-                                Now the etire array is sorted                         
-                                                                         
+                                Now the etire array is sorted                                                    
                 
 """
+def insertion_sort(nums):
+
+
+
+
+
+nums = [3,5,6,4,8,9,10,7,1]
+print("Unsorted Array: ",nums)
+insertion_sort(nums)
+print("**Insertion Sort Performed**")
+print("Sorted Array: ",nums)
