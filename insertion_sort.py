@@ -31,13 +31,22 @@ for i=9  [1,3,4,5,6,7,8,9,10]
                 
 """
 def insertion_sort(nums):
+    n = len(nums)
+    for i in range(1,n):
+        key = nums[i]
+        j = i-1
+        while(j>=0 and nums[j]>key):
+            nums[j+1]=nums[j]
+            j -= 1
 
-
-
+        nums[j+1]=key  
 
 
 nums = [3,5,6,4,8,9,10,7,1]
 print("Unsorted Array: ",nums)
 insertion_sort(nums)
-print("**Insertion Sort Performed**")
+print("**Insertion Sort Applied**")
 print("Sorted Array: ",nums)
+
+#  Time Complexity: 0(n^2)
+# Space Complexity: 0(1)
