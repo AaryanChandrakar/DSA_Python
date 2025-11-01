@@ -65,3 +65,8 @@ print("Unsorted Array: ",nums)
 
 print("**Merge Sort Applied**")
 print("Sorted Array: ",merge_sort(nums))
+
+#  Time Complexity:                 log(n) --> merge_sort  
+#                                        n --> merge_array
+#  Time Complexity: 0(n * log(n))
+# Space Complexity: 0(n)             bcos of result[] array
