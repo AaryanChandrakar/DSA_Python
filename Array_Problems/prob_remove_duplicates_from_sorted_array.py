@@ -1,5 +1,12 @@
 # Remove duplicates from sorted array (In Place)
 
+"""
+first check the current element, 
+    is it equal to next element, 
+        if yes then, just leave and move to next iteration
+        if no then, count it as unique element
+"""
+
 def removeDuplicates(nums):
     n = len(nums)
     if n == 0:
