@@ -16,5 +16,6 @@ new_length = removeDuplicates(nums)
 print("New length:", new_length)
 print("Array after removing duplicates:", nums[:new_length])
 
-# Time Complexity: 0(n)
+#  Time Complexity: 0(n)
+# Space Complexity: 0(1)
 
