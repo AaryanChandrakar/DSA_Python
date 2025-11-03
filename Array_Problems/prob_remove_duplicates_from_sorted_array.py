@@ -1,7 +1,5 @@
 # Remove duplicates from sorted array (In Place)
 
-
-
 """
 first check the current element, 
     is it equal to next element, 
@@ -40,11 +38,14 @@ def remove_duplicate(nums):
     n = len(nums)
     freq_map = {}
     for i in range(0,n):
-        freq_map[nums[i]]=0
+        freq_map[nums[i]] = 0
     j = 0
     for k in freq_map:
         nums[j] = k
-    j+=1
+        j+=1
     return j
+print("Array: ",nums)
+print("After Removing Duplicates, the unique element remains is: ",remove_duplicate(nums))
 
-print(remove_duplicate(nums))
+#  Time Complexity: 0(2n) ~= 0(n)
+# Space Complexity: 0(n)   (worstcase, if all elements are unique)
