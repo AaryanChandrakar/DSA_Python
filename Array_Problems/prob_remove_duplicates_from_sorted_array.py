@@ -49,3 +49,15 @@ print("After Removing Duplicates, the unique element remains is: ",remove_duplic
 
 #  Time Complexity: 0(2n) ~= 0(n)
 # Space Complexity: 0(n)   (worstcase, if all elements are unique)
+
+# Optimal Solution by "Two Pointer":
+"""
+# nums = [1,1,1,2,3,4,4,7,9,9,9,10]
+          ^ ^                       both are same, move 2nd pointer to next element
+          ^   ^                     again same, move 2d pointer to next ele
+         [1,1,1,2,3,4,4,7,9,9,9,10]
+          ^     ^                   both are diff, replace ele pointed by 2nd with element next to 1st pointer
+         [1,2,1,1,3,4,4,7,9,9,9,10]
+            ^     ^                 again diff, 1st pointer will move, replace            
+
+"""
