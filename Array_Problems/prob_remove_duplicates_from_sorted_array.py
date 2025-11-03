@@ -29,5 +29,11 @@ print("Array after removing duplicates:", nums[:new_length])
 # Space Complexity: 0(1)
 
 """
-nums = [1,1,1,2,3,4,4,7,9,9,9,10]
+nums = [1,1,1,2,3,4,4,7,9,9, 9,10]
+#index  0 1 2 3 4 5 6 7 8 9 10 11
+
+#Brute force:
+# take frequency_map that contains key (quique ele of array)
+# for each key you put same value as '0' (zero, bcos we dont require)
+
 
