@@ -37,12 +37,14 @@ nums = [1,1,1,2,3,4,4,7,9,9, 9,10]
 # for each key you put same value as '0' (zero, bcos we dont require)
 
 def remove_duplicate(nums):
-n = len(nums)
-freq_map = {}
-for i in range(0,n):
-    freq_map[nums[i]]=0
-j = 0
-for k in freq_map:
-    nums[j] = k
+    n = len(nums)
+    freq_map = {}
+    for i in range(0,n):
+        freq_map[nums[i]]=0
+    j = 0
+    for k in freq_map:
+        nums[j] = k
     j+=1
-return j
+    return j
+
+print(remove_duplicate(nums))
