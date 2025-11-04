@@ -10,6 +10,7 @@ right_rotate_by_one(arr)
 print(arr)   # Output: [6, 7, 4, 2, 10, 5, 3, 1]
 
 #  Time Complexity: 0(n)
+# Space Complexity: 0(n)
 
 # --------------------------------
 
@@ -27,3 +28,4 @@ right_rotate_by_one_loop(arr2)
 print(arr2)  # Output: [6, 7, 4, 2, 10, 5, 3, 1]
 
 #  Time Complexity: 0(n)
+# Space Complexity: 0(1)
