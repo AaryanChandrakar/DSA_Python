@@ -27,6 +27,22 @@ print(k,"Times Right Rotated Array: ",nums)
 #                    inserting an ele in an array = n
 # Space Complexity: O(1)
 
+print("-------------------------------------------------")
+
+#Better Approach using slicing:
+nums2 = [3,9,5,6,7,2,10,9]
+k=3
+
+n = len(nums2)
+k = k%n
+print("Original Array: ",nums2)
+nums2[:] = nums2[n-k:] + nums2[:n-k]
+print(k,"Times Right Rotated Array (using slicing): ",nums2)
+
+# Time Complexity: O(k + n-k) ~= O(n)
+# Space Complexity: O(1)
+
+
 
 
 
