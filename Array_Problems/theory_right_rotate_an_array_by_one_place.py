@@ -26,6 +26,6 @@ def fun (nums):
 
 print("Before Rotation: ",nums)
 print("After Rotation:  ",fun(nums))
-#  Time Complexity: 0(n)
+#  Time Complexity: O(n-1) =~ 0(n)
 # Space Complexity: 0(1)
 
