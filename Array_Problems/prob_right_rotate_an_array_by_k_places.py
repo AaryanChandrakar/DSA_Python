@@ -41,6 +41,23 @@ print(k,"Times Right Rotated Array (using slicing): ",nums2)
 
 # Time Complexity: O(k + n-k) ~= O(n)
 # Space Complexity: O(1)
+print("----------------------------------------")
+
+#Optimal Approach
+def reverse_fun(nums2,left,right):
+    while(left<right):
+        nums2[left],nums2[right] = nums2[right],nums2[left]
+        left+=1
+        right-=1
+
+nums2 = [3,9,5,6,7,2,10,9]
+k=2
+n=len(nums2)
+print("Original Array: ",nums2)
+reverse_fun(nums2,n-k,n-1)
+reverse_fun(nums2,0,n-k-1)
+reverse_fun(nums2,0,n-1)
+print(k,"Times Rotated Array: ", nums2)
 
 
 
