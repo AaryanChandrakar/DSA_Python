@@ -7,10 +7,10 @@
 # resulttant array : [1,2,3,3,5,1,0,0,0]  (order remains same of non-zero elements)
 #                     0 1 2 3 4 5 6 7 8
 
+
+# Normal Solution:
 nums = [1,0,2,3,0,0,3,5,1]
 temp = []
-count_zeros = 0
-
 for i in nums:
     if(i != 0):
         temp.append(i)
@@ -23,5 +23,36 @@ for i in range(len(nums)):
         nums[i] = 0           
 print("Array after operation: ",nums)
 
-# Time Complexity:  O(n)
+# Time Complexity:  O(n+n) ~= O(n)
 # Space Complexity: O(n)
+print("-----------------------------------------")
+
+# Optimal Solution:
+nums2 = [1,2,0,4,0,0,3,5,1]
+
+def my_fun(nums2):
+    if len(nums2)==1:
+        return
+
+    i=0
+    while(i<len(nums2)):
+        if nums2[i]==0:
+            break
+        i+=1
+
+    if i==len(nums2):
+        return 
+
+    j=i+1
+    while(j<len(nums2)):
+        if(nums2[j] != 0):
+            nums2[i],nums2[j] = nums2[j],nums2[i]
+            i+=1
+        j+=1
+
+print("Original Array:        ",nums2)
+my_fun(nums2)
+print("Array after Operation: ",nums2)
+
+# Time Complexity:  O(n)
+# Space Complexity: O(1)
