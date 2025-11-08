@@ -59,6 +59,16 @@ reverse_fun(nums2,0,n-k-1)
 reverse_fun(nums2,0,n-1)
 print(k,"Times Rotated Array: ", nums2)
 
+# Time Complexity:
+"""
+Reverse last k elements = k/2
+Reverse remaining ele = (n-k)/2
+Reverse whole array = n/2
+ k       n-k       n        2n
+---  +  -----  +  ---  ==> ----  ==> n
+ 2        2        2        2
+"""
+
 # Time Complexity:  O(n)   
 # Space Complexity: O(1)
 
