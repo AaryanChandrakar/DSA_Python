@@ -65,8 +65,7 @@ print("---------------------------------------------------------------------")
 
          [1,2,3,4,7,9,10,1,1,9,9,4]  
                        ^              total 7 unique elements are there , return the pointer index + 1                                        
-                              
-                        
+                  
 """
 def my_fun(nums1):
     n = len(nums1)
@@ -74,18 +73,13 @@ def my_fun(nums1):
         return 1
     i = 0
     j = i+1
-
     while(j<n):
         if nums1[j] != nums1[i]:
             i+=1
             nums1[i],nums1[j] = nums1[j],nums1[i]
         j+=1
     return i+1
-
 nums1 = [1,1,1,2,3,4,4,7,9,9,9,9,10,10]
-
 print("No. of Unique Elements: ",my_fun(nums1))
-
-
 # Time Complexity : O(n)
 # Space Complexity: O(1)
