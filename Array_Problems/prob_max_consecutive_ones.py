@@ -14,4 +14,6 @@ def max_consicutive_ones(nums):
             count = 0
     return max_count
 print("Max Consicutive Ones",max_consicutive_ones(nums))
+# Time Complexity:  O(n)
+# Space Complexity: O(1)
 
