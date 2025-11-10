@@ -1,5 +1,6 @@
 #Two Sum Problem
 
+# Normal Solution:
 def two_sum(nums,target):
     n = len(nums)
     for i in range(n-1):
@@ -14,6 +15,7 @@ print("The index of those elements (normal): ",two_sum(nums,target))
 # Space Complexity: O(1)
 
 
+# Optimal Solution:
 def two_sum_opt(nums,target):
     seen = {}
     for i in range(len(nums)):
@@ -24,3 +26,7 @@ def two_sum_opt(nums,target):
 nums2 = [2,7,11,15]
 target2 = 9
 print("The index of those elements (optimal): ",two_sum_opt(nums2,target2))
+# Time Complexity:  O(n)
+# Space Complexity: O(n)
+# With optimal solution, we can do in constant space, we always need extra space, 
+# In case to achive contant space, we have to compromise with time complexity (will be increased)
