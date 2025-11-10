@@ -13,6 +13,7 @@ target = 13
 print("The index of those elements (normal): ",two_sum(nums,target))
 # Time Complexity:  O(n^2)
 # Space Complexity: O(1)
+print("-------------------------------------------")
 
 
 # Optimal Solution:
