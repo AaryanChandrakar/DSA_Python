@@ -11,7 +11,7 @@ def fun(prices):
                 profit = prices[j] - prices[i]
                 max_profit = max(max_profit, profit)
     return max_profit 
-print("Max frofit he/she will make is: ",fun(prices))`
+print("Max frofit he/she will make is: ",fun(prices))
 # Time Complexity:  O(n^2)`
 #Space Complexity: O(1)
 
@@ -28,7 +28,6 @@ def fun_opt(prices):
         if profit > max_profit:
             max_profit = profit 
     return max_profit
-prices = [7,2,1,5,6,4,8]
 print("Best time to buy and sell: ",fun_opt(prices))
 # Time Complexity:  O(n)
 # Space Complexity: O(1)
