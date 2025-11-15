@@ -39,10 +39,3 @@ print("Original Array:   ",nums2)
 print("Rearranged Array: ",fun_opt(nums2))
 # Time Complexity:  O(n)
 # Space Complexity: O(n)
-
-
-
-
-
-
-
