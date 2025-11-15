@@ -19,4 +19,5 @@ def fun(nums):
             cons_length = 1
     return max(max_length, cons_length)
 
+
 print("Longest Consecutive Sequence in Array: ",fun(nums))
