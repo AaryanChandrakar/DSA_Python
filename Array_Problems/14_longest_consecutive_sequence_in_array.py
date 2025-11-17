@@ -5,7 +5,7 @@
 # Here longest consecutive sequence is 1,2,3  or 99,100,101
 # So, length of longest consecutive sequence is 3
 
-# Bruret Force Approach
+# Bruteforce Approach (using extrspace, convertion: list --> set --> list)
 nums = [1,99,101,98,2,5,3,99,100]
 def fun(nums):
     dist_nums = list(set(nums))
@@ -21,7 +21,23 @@ def fun(nums):
         else:
             max_length = max(max_length,cons_length)
             cons_length = 1
-    return max_length
-
-
+    return max(cons_length, max_length)
 print("Longest Consecutive Sequence in Array: ",fun(nums))
+# Time Complexity:  O(n^2)
+# Space Complexity: O(n)
+print("------------------------------------------------")
+
+#Bruteforce Approach (without extra space)
+def my_fun(nums):
+    n = len(nums)
+    max_length = 0
+    for num in nums:
+        length = 1
+        while num+1 in nums:
+            length+=1
+            num+=1
+        max_length = max(length, max_length)
+    return max_length
+print("Max length of consecutive sequece in array is: ",my_fun(nums))
+# Time Complexity:  O(n^2)
+# Space Complexity: O(1)
