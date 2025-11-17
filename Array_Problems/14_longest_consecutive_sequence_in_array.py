@@ -41,3 +41,4 @@ def my_fun(nums):
 print("Max length of consecutive sequece in array is: ",my_fun(nums))
 # Time Complexity:  O(n^2)
 # Space Complexity: O(1)
+print("-------------------------------------------------------")
