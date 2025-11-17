@@ -2,6 +2,10 @@
 
 # nums = [1,99,101,98,2,5,3,99,100]
 #        [1,2,3,5,98,99,99,100,101]
+# Here longest consecutive sequence is 1,2,3  or 99,100,101
+# So, length of longest consecutive sequence is 3
+
+# Bruret Force Approach
 nums = [1,99,101,98,2,5,3,99,100]
 def fun(nums):
     dist_nums = list(set(nums))
@@ -17,7 +21,7 @@ def fun(nums):
         else:
             max_length = max(max_length,cons_length)
             cons_length = 1
-    return max(max_length, cons_length)
+    return max_length
 
 
 print("Longest Consecutive Sequence in Array: ",fun(nums))
