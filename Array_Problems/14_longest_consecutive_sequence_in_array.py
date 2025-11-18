@@ -42,3 +42,47 @@ print("Max length of consecutive sequece in array is: ",my_fun(nums))
 # Time Complexity:  O(n^2)
 # Space Complexity: O(1)
 print("-------------------------------------------------------")
+
+#Better Approach
+ 
+def fun_better(nusm):
+    nums.sort()      # T.C. --> O(n logn)
+    n = len(nums)
+    count = 0
+    longest = 0
+    last_smallest = float("-inf")
+    for i in range(1,n):    # T.C. --> O(n)
+        if nums[i] == nums[i-1]:
+            continue
+        elif nums[i] == nums[i-1]+1:
+            count+=1
+        else:
+            longest = max(longest, count)
+            count = 1    
+    return max(longest, count)
+print("Longest Consecutive Sequence in Array: ",fun_better(nums))
+# Time Complexity:  O(nlogn + n)
+# Space Complexity: O(1)
+print("------------------------------------------------")
+
+# Optimal Approach
+def fun_opt(nums):
+    my_set = set()
+    n = len(nums)
+    for i in range(0,n):
+        my_set.add(nums[i])
+
+    longest = 0
+    for num in my_set:
+        if num-1 not in my_set:
+            n = num
+            count = 1
+            while n+1 in my_set:
+                count+=1
+                n+=1
+        longest = max(longest,count)
+    return longest
+print("longest Consecutive Sequence in array: ",fun_opt(nums))
+# Time Complexity:  O(n+n+n) ~= O(n)
+# Space Complexity: O(n)
+    
