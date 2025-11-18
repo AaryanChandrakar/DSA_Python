@@ -18,3 +18,29 @@ matrix = [
 
 transposed = transpose(matrix)
 print(transposed)  # Output: [[1, 4], [2, 5], [3, 6]]
+
+# 2D Matrix
+# What is 2D matrix / 2D list ?
+"""
+nums = [[5,20,3],[7,-10,9],[1,-52,6]]
+#index     0         1          2
+length of array 'nums' is: 3
+
+    col 0   1    2
+row   --------------
+0     | 5 | 20 | 3 |
+      --------------
+1     | 7 |-10 | 9 |
+      --------------
+2     | 1 |-52 | 6 |
+
+Here, we can see the 3*3 matrix.
+
+If I need to make a variable that represants no. of rows in 2D matrix then we can do:
+      no_of_rows = len(nums)
+
+If I need to make a variable that represants no. of cols in 2D matric then we can do,
+     np_of_cols = len(nums[0])
+
+
+"""
