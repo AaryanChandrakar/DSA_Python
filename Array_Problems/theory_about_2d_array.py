@@ -1,24 +1,3 @@
-def transpose(matrix):
-    if not matrix or not matrix[0]:
-        return []
-    rows = len(matrix)
-    cols = len(matrix[0])
-    # Create a new matrix with cols rows and rows columns
-    result = [[0 for _ in range(rows)] for _ in range(cols)]
-    for i in range(rows):
-        for j in range(cols):
-            result[j][i] = matrix[i][j]
-    return result
-
-# Sample function call:
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
-
-transposed = transpose(matrix)
-print(transposed)  # Output: [[1, 4], [2, 5], [3, 6]]
-
 # 2D Matrix
 # What is 2D matrix / 2D list ?
 """
@@ -40,7 +19,14 @@ If I need to make a variable that represants no. of rows in 2D matrix then we ca
       no_of_rows = len(nums)
 
 If I need to make a variable that represants no. of cols in 2D matric then we can do,
-     np_of_cols = len(nums[0])
-
+     no_of_cols = len(nums[0])  # Bcos elements in any row is equal to no of columns
 
 """
+
+# Iterating each elements of an array:
+nums = [[5,20,3],[7,-10,9],[1,-52,6]]
+print("Printing 2D Array: ",nums)
+print("Iterating 2D Array: ")
+for i in range(len(nums)):
+    for j in range(len(nums[0])):
+        print(nums[i][j], end=", ")
