@@ -67,19 +67,15 @@ print("------------------------------------------------")
 
 # Optimal Approach
 def fun_opt(nums):
-    my_set = set()
-    n = len(nums)
-    for i in range(0,n):
-        my_set.add(nums[i])
-
+    my_set = set(nums)
     longest = 0
     for num in my_set:
-        if num-1 not in my_set:
-            n = num
+        if num-1 not in my_set:     # it allows to start with smallest element in set
+            x = num                 # if you found then store in on variable
             count = 1
-            while n+1 in my_set:
+            while x+1 in my_set:
                 count+=1
-                n+=1
+                x+=1
         longest = max(longest,count)
     return longest
 print("longest Consecutive Sequence in array: ",fun_opt(nums))
