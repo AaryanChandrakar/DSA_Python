@@ -30,3 +30,33 @@ print("Iterating 2D Array: ")
 for i in range(len(nums)):
     for j in range(len(nums[0])):
         print(nums[i][j], end=", ")
+print(" ")
+# Find total of all elements in 2D matrix
+total = 0
+for i in range(len(nums)):
+    for j in range(len(nums[0])):
+        total += nums[i][j]
+print("Total Sum of all the elements: ",total)
+
+# print firsts row 
+print("Elements in first row: ")
+for i in range(1):
+    for j in range(len(nums[0])):
+        print(nums[i][j], end=", ")
+print(" ")
+
+#print second row:
+print("Elements in second row: ")
+for i in range(1,2):
+    for j in range(len(nums[0])):
+        print(nums[i][j], end=", ")
+print(" ")
+
+#print elements in third row:
+print("Elements in third row: ")
+for i in range(2,3):
+    for j in range(len(nums[0])):
+        print(nums[i][j], end=", ")
+print(" ")
+        
+        
