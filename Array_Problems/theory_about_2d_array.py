@@ -58,5 +58,54 @@ for i in range(2,3):
     for j in range(len(nums[0])):
         print(nums[i][j], end=", ")
 print(" ")
+print("---------------------------------------")
         
-        
+# Now we'll see how elements are printed in different manner
+# (upper triangle, lower triangle, diagonal)
+arr = [[5,10,8],[7,6,3],[2,1,9]]
+def upper_triangular(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr[0])):
+            if j>=i:
+                print(arr[i][j], end=" ")
+            else:
+                print("*",end=" ")
+        print(" ")
+
+def lower_triangular(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr[0])):
+            if i>=j:
+                print(arr[i][j], end=" ")
+            else:
+                print("*",end=" ")
+        print(" ")
+
+def diagonal_of_matrix(arr):
+    for i in range(len(arr)):
+        for j in range(len(nums[0])):
+            if i==j:
+                print(arr[i][j], end=" ")
+            else:
+                print("*",end=" ")
+        print(" ")
+
+def transpose_of_matrix(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr[0])):
+            print(arr[j][i],end=" ")
+        print(" ")
+
+
+print("----------------------------")
+print("Upper Triangular Matrix:")
+upper_triangular(arr)
+print("--------------------------------")
+print("Lower Triangular Matrix: ")
+lower_triangular(arr)
+print("--------------------------------")
+print("Diagonal Matrix: ")
+diagonal_of_matrix(arr)
+print("--------------------------------")
+print("Transpose of matrix: ")
+transpose_of_matrix(arr)
