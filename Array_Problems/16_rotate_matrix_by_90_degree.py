@@ -18,3 +18,26 @@ for row in nums:
 print("90 degree rotated matrix: ")
 for row in fun(nums):
     print(*row)
+# Time Complexity:  O(n^2)
+# Space Complexity: O(n^2)
+print("-------------------------------------------")
+
+# Optimal Approach
+# (do transpose of matrix then -> reverse each row of matrix)
+
+def fun_opt(nums):
+    for i in range(len(nums)-1):
+        for j in range(i+1,len(nums[0])):
+            nums[i][j], nums[j][i] = nums[j][i], nums[i][j]
+    for i in range(len(nums)):
+        nums[i].reverse()
+print("Original Array: ")
+for row in nums:
+    print(*row)
+fun_opt(nums)   # function calling
+print("Rotated Array: ")
+for row in nums:
+    print(*row)
+
+# Time Complexity:  O(n*m) + O(n*n)
+# Space Complexity: O(1)         
