@@ -30,3 +30,33 @@ print("Original Array: ")
 for i in nums:
     print(*i)
 set_zeros(nums)
+# Time Complexity:  O((n+m)*(n*m)) + O(n*m)
+# Space Complexity: O(1)
+print("--------------------------------------")
+
+# Optimal Approach
+
+def fun(nums):
+    row_track = [0 for i in range(len(nums))]
+    col_track = [0 for j in range(len(nums[0]))]
+
+    for i in range(len(nums)):
+        for j in range(len( nums[0])):
+            if nums[i][j]==0:
+                row_track[i] = -1
+                col_track[j] = -1
+    
+    for i in range(len(nums)):
+        for j in range(len(nums[0])):
+            if row_track[i]==-1 or col_track[j]==-1:
+                nums[i][j] = 0
+arr = [[0,9,2,3],[31,8,6,10],[2,10,-7,5],[4,0,6,7]]
+print("Original 2D Array: ")
+for i in arr:
+    print(*i)
+fun(arr)
+print("Array After Operation: ")
+for i in arr:
+    print(*i)
+# Time Complexity:  O(n*m + n*m)
+# Space Complexity: O(n+m)
