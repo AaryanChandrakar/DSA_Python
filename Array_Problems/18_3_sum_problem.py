@@ -50,4 +50,12 @@ def threeSum(nums):
         return [list(ans) for ans in result]
 print("Result: ",threeSum(nums))
 # Time Complexity:  O(n^2)
-# Space Complexity: O(n)
+# Space Complexity: O(n) + O(no. of triplets)
+print("--------------------------------------------")
+
+# Optimal Approach:
+"""
+Time Complexity can not be reduced, but we can reduce Space Complexity
+"""
+
+     
