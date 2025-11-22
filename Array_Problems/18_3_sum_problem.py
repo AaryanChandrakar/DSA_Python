@@ -29,3 +29,5 @@ def fun_bruteforce(nums,x):
 nums = [-1,0,1,2,-1,-4]
 x=0
 print("Result: ",fun_bruteforce(nums,x))
+# Time Complexity:  O(n^3)
+# Space Complexity: O(no. of triplets)
