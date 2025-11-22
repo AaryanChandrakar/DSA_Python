@@ -31,3 +31,4 @@ x=0
 print("Result: ",fun_bruteforce(nums,x))
 # Time Complexity:  O(n^3)
 # Space Complexity: O(no. of triplets)
+print("--------------------------------------")
