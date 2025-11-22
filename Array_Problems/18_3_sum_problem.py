@@ -32,3 +32,22 @@ print("Result: ",fun_bruteforce(nums,x))
 # Time Complexity:  O(n^3)
 # Space Complexity: O(no. of triplets)
 print("--------------------------------------")
+
+# Better Approach:
+
+def threeSum(nums):
+        n = len(nums)
+        result = set()
+        for i in range(0,n):
+            my_set = set()
+            for j in range(i+1,n):
+                third = -(nums[i]+nums[j])
+                if third in my_set:
+                    temp = [nums[i],nums[j],third]
+                    temp.sort()
+                    result.add(tuple(temp))
+                my_set.add(nums[j])
+        return [list(ans) for ans in result]
+print("Result: ",threeSum(nums))
+# Time Complexity:  O(n^2)
+# Space Complexity: O(n)
