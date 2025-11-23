@@ -83,3 +83,5 @@ def threeSum_opt(nums):
                         k-=1
         return result
 print("Result: ",threeSum_opt(nums))
+# Time Complexity:  O(nlogn + n^2) =~ O(n^2)
+# Space Complexity: O(no. of triplets)
