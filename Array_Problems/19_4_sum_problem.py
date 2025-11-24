@@ -33,9 +33,32 @@ def fun_brute(nums, target):
     return result
 print("Result: ",fun_brute(nums,target))
 # Time Complexity:  O(n^4)
-# Space Complexity: O(no. of quadruplet)
+# Space Complexity: O(n)
 print("-------------------------------------------------------------")
 
 # Better Approach
 def fun_better(nums,traget):
+    nums.sort()
     n = len(nums)
+    my_set = set()
+    for i in range(0,n):
+        for j in range(i+1,n):
+            hash_set = set()
+            for k in range(j+1,n):
+                fourth = target - (nums[i]+nums[j]+nums[k])
+                if fourth in hash_set:
+                    temp = [nums[i],nums[j],nums[k],fourth]
+                    temp.sort()
+                    my_set.add(tuple(temp))
+                hash_set.add(nums[k])
+    result = []
+    for i in my_set:
+        result.append(list(i))
+    return result
+
+print("Result: ",fun_better(nums,target))
+# Time Complexity:  O(nlogn + n^3)
+# Space Complexity: O(n)
+print("----------------------------------------------------------")
+
+
