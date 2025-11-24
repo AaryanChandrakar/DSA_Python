@@ -61,4 +61,34 @@ print("Result: ",fun_better(nums,target))
 # Space Complexity: O(n)
 print("----------------------------------------------------------")
 
+# Optimal Approach:
+def fun_opt(nums,target):
+    n = len(nums)
+    result = []
+    for i in range(0,n):
+        if i>0 and nums[i]==nums[i-1]:
+            continue
+        for j in range(i+1,n):
+            if j>i+1 and nums[j]==nums[j-1]:
+                continue
+            k = j+1
+            l = n-1
+            while(k<l):
+                total = nums[i]+nums[j]+nums[k]+nums[l]
+                if total < target:
+                    k+=1
+                elif total > target:
+                    l-=1
+                else: 
+                    result.append([nums[i],nums[j],nums[k],nums[l]])
+                    k += 1
+                    l -=1
+                    while k<l and nums[k]==nums[k-1]:
+                        k+=1
+                    while k<l and nums[l]==nums[l+1]:
+                        l-=1
+    return result
+print("Result: ",fun_opt(nums,target))
+# Time Complexity:  O(nlogn + n^3) =~ O(n^3)
+# Space Complexity: O(no. of quadruplet)
 
