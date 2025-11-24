@@ -40,6 +40,8 @@ print("-------------------------------------------------------------")
 def fun_better(nums,traget):
     nums.sort()
     n = len(nums)
+    if n<4:
+        return []
     my_set = set()
     for i in range(0,n):
         for j in range(i+1,n):
@@ -64,6 +66,8 @@ print("----------------------------------------------------------")
 # Optimal Approach:
 def fun_opt(nums,target):
     n = len(nums)
+    if n<4:
+        return []
     result = []
     for i in range(0,n):
         if i>0 and nums[i]==nums[i-1]:
