@@ -21,9 +21,23 @@ def binary_search(nums,target):
     return -1
 
 print("Target",target,"is at index: ",binary_search(nums,target))
-# Time Complexity:  O()
-# Space Complexity: O()
+# Time Complexity:  O(log2(n))
+# Space Complexity: O(1)
 print("-----------------------------------------------")
 
 # Recursive Solution for Binary Search
+def binary_search_recursive(nums, target, low, high):
+    if low>high:
+        return -1
+    
+    mid = (low+high)//2
+    if nums[mid]==target:
+        return mid
+    elif nums[mid]<target:
+        return binary_search_recursive(nums,target,mid+1,high)
+    else:
+        return binary_search_recursive(nums,target,low,mid-1)
 
+print("Target",target,"found at index: ",binary_search_recursive(nums,target,0,len(nums)-1))
+# Time Complexity:  O(log2(n))
+# Space Complexity: O(1)  --> it has stack space of size O(n)
