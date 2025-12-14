@@ -31,3 +31,4 @@ print(target,"can be inserted at index: ",binary_search(nums,target))
 # Time Complexity: O(log2(n))
 # Space Complexity: O(1)
 # Note: This approach can also be implemented using recursion.
+#       We can apply binary search to sorted arrays to find the lower/upper bound index of the target element.
