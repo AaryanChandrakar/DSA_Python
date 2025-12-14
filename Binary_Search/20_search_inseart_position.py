@@ -30,3 +30,4 @@ def binary_search(nums,target):
 print(target,"can be inserted at index: ",binary_search(nums,target))
 # Time Complexity: O(log2(n))
 # Space Complexity: O(1)
+# Note: This approach can also be implemented using recursion.
