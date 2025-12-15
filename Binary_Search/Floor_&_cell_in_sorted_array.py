@@ -40,3 +40,6 @@ if __name__ == "__main__":
     target = 6
     f, c = floor_and_ceil(nums, target)
     print("Floor:", f, "Ceil:", c)  # Floor: 4, Ceil: 8
+
+# Time Complexity: O(log n)
+
