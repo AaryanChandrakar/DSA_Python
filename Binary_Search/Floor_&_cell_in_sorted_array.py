@@ -42,4 +42,4 @@ if __name__ == "__main__":
     print("Floor:", f, "Ceil:", c)  # Floor: 4, Ceil: 8
 
 # Time Complexity: O(log n)
-
+# Space Complexity: O(1)
