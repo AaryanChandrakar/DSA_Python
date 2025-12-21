@@ -1,5 +1,5 @@
-# Lower Bound: Smallest index such that nums[i]>=target
-# Upper Bound: Larget index such that nums[i]<=tareget
+# Lower Bound: Smallest index-i such that nums[i]>=target
+# Upper Bound: Smallest index-i such that target<nums[i]
 
 nums = [1,1,1,2,3,3,5,6,7,7, 7, 9, 12, 12, 13]
 #index  0 1 2 3 4 5 6 7 8 9 10 11  12  13  14
@@ -19,7 +19,7 @@ def lower_bound(nums, target):
             low = mid+1
     return lb
 print("Lower Bound: ",lower_bound(nums,target))
-# Time Complexity:  O(log2(n))
+# Time Complexity:  O(log n)
 # Space Complexity: O(1)
 
 
@@ -38,5 +38,5 @@ def upper_bound(nums, target):
             low=mid+1
     return ub
 print("Upper Bound: ",upper_bound(nums,target))
-# Time Complexity:  O(log2(n))
+# Time Complexity:  O(log n)
 # Space Complexity: O(1)
