@@ -1,9 +1,13 @@
 # Lower Bound: Smallest index-i such that nums[i]>=target
 # Upper Bound: Smallest index-i such that target<nums[i]
 
+target = 7
 nums = [1,1,1,2,3,3,5,6,7,7, 7, 9, 12, 12, 13]
 #index  0 1 2 3 4 5 6 7 8 9 10 11  12  13  14
-target = 7
+#                       ^       ^
+#                       |       |
+#                      LB=8   UB=11   
+
 
 def lower_bound(nums, target):
     n = len(nums)
