@@ -48,3 +48,6 @@ sol = Solution()
 output = sol.rightSideView(root)
 
 print("Right Side View:", output)
+
+# Time complexity: O(log n)
+# Space complexity: O(n)
