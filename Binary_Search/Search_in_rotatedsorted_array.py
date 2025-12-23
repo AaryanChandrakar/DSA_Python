@@ -35,3 +35,6 @@ if __name__ == "__main__":
     # Calling the function
     index = search_in_rotated(arr, target)
     print("Index:", index)  # Output: 4
+
+# Time Complexity: O(log n)
+# Space Complexity: O(1)
