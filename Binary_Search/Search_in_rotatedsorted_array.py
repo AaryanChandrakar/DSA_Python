@@ -1,7 +1,6 @@
 def search_in_rotated(nums, target):
     """
     Returns index of target in rotated sorted array nums, or -1 if not found.
-    Time: O(log n), Space: O(1)
     """
     left, right = 0, len(nums) - 1
 
