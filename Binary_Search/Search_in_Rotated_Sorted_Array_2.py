@@ -35,3 +35,6 @@ print(search(nums, target))   # True
 
 target = 3
 print(search(nums, target))   # False
+
+# Time Complexity: O(log n) on average, O(n) in the worst case due to duplicates
+# Space Complexity: O(1)
