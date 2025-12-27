@@ -40,3 +40,4 @@ if __name__ == "__main__":
     print("Minimum element:", ans)
 
 # Time Complexity: O(logn)
+# Space Complexity: O(1)
