@@ -38,3 +38,5 @@ if __name__ == "__main__":
     ans = find_min(nums)
     print("Array:", nums)
     print("Minimum element:", ans)
+
+# Time Complexity: O(logn)
