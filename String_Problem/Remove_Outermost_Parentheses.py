@@ -4,15 +4,14 @@ def remove_outer_parentheses(s):
     for ch in s:
         if ch == '(':
             depth += 1
-            if depth > 1:  # Video logic: add only inner '('
+            if depth > 1:  # logic: add only inner '('
                 result.append(ch)
         else:
             depth -= 1
-            if depth > 0:  # Video logic: add only inner ')'
+            if depth > 0:  # logic: add only inner ')'
                 result.append(ch)
     return ''.join(result)
 
-# Direct test - copy paste this
 test_cases = ["(()())(())", "(()())(())", "(()(())(())"]
 for s in test_cases:
     print(f'Input:  {s}')
