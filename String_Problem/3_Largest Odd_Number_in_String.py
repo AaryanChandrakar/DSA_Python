@@ -11,3 +11,4 @@ for s in test_cases:
     print('---')
 
     # Time Complexity: O(n)
+    # Space Complexity: O(1)
