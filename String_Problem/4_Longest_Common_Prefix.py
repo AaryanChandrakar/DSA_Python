@@ -18,4 +18,5 @@ strs = ["flow","flower","flowers"]
 output = fun(strs)
 print(output)
 
-# Time Complexity: O(m * n)
+# Time Complexity:  O(m * n)
+# Space Complexity: O(1)
