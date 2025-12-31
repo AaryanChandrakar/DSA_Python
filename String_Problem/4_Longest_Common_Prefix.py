@@ -17,3 +17,5 @@ def fun(strs):
 strs = ["flow","flower","flowers"]
 output = fun(strs)
 print(output)
+
+# Time Complexity: O(m * n)
