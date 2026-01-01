@@ -27,3 +27,4 @@ class Solution:
 
 
 # Time Complexity:  O(n)
+# Space Complexity: O(k) , k = size of character set, 26 for lower case alphabet
