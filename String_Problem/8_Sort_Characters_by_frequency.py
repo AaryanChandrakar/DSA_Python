@@ -13,3 +13,6 @@ print(sort_characters_by_frequency("cccaaa"))
 print(sort_characters_by_frequency("Aabb"))
 print(sort_characters_by_frequency("Aaryan"))
 print(sort_characters_by_frequency("hhheeellllggooooeeeeeeeee"))
+
+#  Time Complexity: O(n) + O(nlogn) + O(n) = O(nlogn)
+# Space Complexity: O(n) 
