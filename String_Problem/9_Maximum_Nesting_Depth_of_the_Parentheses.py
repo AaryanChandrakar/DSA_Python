@@ -14,3 +14,6 @@ print(fun("(((())))(()))"))
 print(fun("()()"))
 print(fun("(())()"))
 
+
+#  Time Complexity: O(n)
+# Space Complexity: O(1)
