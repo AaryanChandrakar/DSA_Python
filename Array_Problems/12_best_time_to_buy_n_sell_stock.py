@@ -28,6 +28,6 @@ def fun_opt(prices):
         if profit > max_profit:
             max_profit = profit 
     return max_profit
-print("Best time to buy and sell: ",fun_opt(prices))
+print("Max profit: ",fun_opt(prices))
 # Time Complexity:  O(n)
 # Space Complexity: O(1)
