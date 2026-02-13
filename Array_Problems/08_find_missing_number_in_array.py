@@ -44,8 +44,8 @@ print("------------------------------------------------")
 
 #Optimal Solution
 def fun_optimal_solution(nums):
-    n = len(nums)
-    return (n*(n+1)/2) - sum(nums)
+    n = len(nums) + 1
+    return (n*(n+1)//2) - sum(nums)
 print('Missing Element: ',fun_optimal_solution(nums))
 print("Missing Element: ",fun_optimal_solution(nums1))
 print("Missing Element: ",fun_optimal_solution(nums2))
