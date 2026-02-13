@@ -56,3 +56,16 @@ print("Array after Operation: ",nums2)
 
 # Time Complexity:  O(n)
 # Space Complexity: O(1)
+
+print("-------------------------------------------")
+
+#Pythinic Code
+nums = [4,5,0,8,0,7,0,1,0,6,0,0,4,9]
+
+def fun(nums):
+    n = len(nums)
+    non_zero_ele = [i for i in nums if i!=0]
+    zeros = [0] * nums.count(0)
+    return non_zero_ele + zeros
+
+print(fun(nums))

@@ -1,4 +1,4 @@
-# Right rotate an Array by K places
+    # Right rotate an Array by K places
 
 # nums = [3,9,5,6,7,2]  , let k=3
 #        [2,3,9,5,6,7]  # first right rotation

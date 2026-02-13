@@ -18,7 +18,8 @@ def merge_2_sorted_array(nums1,nums2):
     result.sort()
     return result
 print("Merged two sorted array without duplicacy: ",merge_2_sorted_array(nums1,nums2))
-
+#  Time Complexity: O(n+m)log(n+m)
+# Space Complexity: O(n+m)
 
 # Using Loop:
 def my_fun(nums1, nums2):
