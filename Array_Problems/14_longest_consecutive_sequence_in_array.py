@@ -76,7 +76,7 @@ def fun_opt(nums):
             while x+1 in my_set:
                 count+=1
                 x+=1
-        longest = max(longest,count)
+            longest = max(longest,count)
     return longest
 print("longest Consecutive Sequence in array: ",fun_opt(nums))
 # Time Complexity:  O(n+n+n) ~= O(n)
