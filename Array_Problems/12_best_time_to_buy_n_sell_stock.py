@@ -15,18 +15,16 @@ print("Max frofit he/she will make is: ",fun(prices))
 # Time Complexity:  O(n^2)`
 #Space Complexity: O(1)
 
-
+print("--------------------------------------------------------------")
 
 def fun_opt(prices):
     n = len(prices)
     min_price = float("inf")
     max_profit = 0
     for price in prices:
-        if price < min_price:
-            min_price = price
+        min_price = min(min_price,price)
         profit = price - min_price
-        if profit > max_profit:
-            max_profit = profit 
+        max_profit = max(max_profit,profit) 
     return max_profit
 print("Max profit: ",fun_opt(prices))
 # Time Complexity:  O(n)
