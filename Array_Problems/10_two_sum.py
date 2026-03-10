@@ -23,7 +23,8 @@ def two_sum_opt(nums,target):
         complement = target - nums[i]
         if complement in seen:
             return [seen[complement],i]
-        seen[nums[i]] = i
+        else:
+            seen[nums[i]] = i
 nums2 = [2,7,11,15]
 target2 = 9
 print("The index of those elements (optimal): ",two_sum_opt(nums2,target2))
