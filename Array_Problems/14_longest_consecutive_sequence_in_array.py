@@ -2,8 +2,8 @@
 
 # nums = [1,99,101,98,2,5,3,99,100]
 #        [1,2,3,5,98,99,99,100,101]
-# Here longest consecutive sequence is 1,2,3  or 99,100,101
-# So, length of longest consecutive sequence is 3
+# Here longest consecutive sequence is 1,2,3  or 98,99,100,101
+# So, length of longest consecutive sequence is 4
 
 # Bruteforce Approach (using extrspace, convertion: list --> set --> list)
 nums = [1,99,101,98,2,5,3,99,100]

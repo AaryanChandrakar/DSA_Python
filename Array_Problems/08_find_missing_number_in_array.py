@@ -1,6 +1,8 @@
 # Find the missing number
-
-
+nums = [1,0,3,4]
+nums1 = [9,6,4,2,3,5,7,0,1]
+nums2 = [3,0,1]
+nums3 = [0,1,2,3,4]
 # Bruteforce Approach:
 def find_missing_number(nums):
     n = len(nums)
@@ -8,13 +10,9 @@ def find_missing_number(nums):
         if i not in nums:           # --> T.C = O(n)
             return i
     return -1
-nums = [1,0,3,4]
 print("Missing Element: ",find_missing_number(nums))
-nums1 = [9,6,4,2,3,5,7,0,1]
 print("Missing Element: ",find_missing_number(nums1))
-nums2 = [3,0,1]
 print("Missing Element: ",find_missing_number(nums2))
-nums3 = [0,1,2,3,4]
 print("Missing Element: ",find_missing_number(nums3))
 # Time Complexity:  O(n)
 # Space Complexity: O(1)
@@ -45,7 +43,7 @@ print("------------------------------------------------")
 #Optimal Solution
 def fun_optimal_solution(nums):
     n = len(nums) + 1
-    return (n*(n+1)//2) - sum(nums)
+    return (n*(n+1))//2 - sum(nums)
 print('Missing Element: ',fun_optimal_solution(nums))
 print("Missing Element: ",fun_optimal_solution(nums1))
 print("Missing Element: ",fun_optimal_solution(nums2))

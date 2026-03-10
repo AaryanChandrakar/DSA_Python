@@ -13,7 +13,7 @@ nums = [1,0,2,3,0,0,3,5,1]
 temp = []
 for i in nums:
     if(i != 0):
-        temp.append(i)
+        temp.append(i)               
 
 print("Original Array:        ",nums)
 for i in range(len(nums)):
@@ -69,3 +69,6 @@ def fun(nums):
     return non_zero_ele + zeros
 
 print(fun(nums))
+
+# T(n) = O(n)
+# S(n) = O(n)
