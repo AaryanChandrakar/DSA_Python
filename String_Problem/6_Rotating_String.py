@@ -1,7 +1,7 @@
 def rotate_string(s1, s2):
     if len(s1) != len(s2):
         return False
-    temp = s1 + s2
+    temp = s1 + s1
     if s2 in temp:
         return True
     else:
